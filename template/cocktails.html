@@ -1,0 +1,48 @@
+{% extends 'base.html' %} {% block content %} 
+<div class="row">
+    <div class="container-fluid">
+{% for cocktail in cocktails%}
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="{{cocktail.profile}}">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4"><strong>{{cocktail.cocktail_name}}</strong><i class="material-icons right">more_vert</i></span>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted"> {{cocktail.cocktail_info}} </small>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i><strong>{{cocktail.cocktail_name}}</strong></span>
+                    <ul>
+                       {% for cat in categories %}
+                        <li>- {{cat.category_name}}  </li>
+                       {% endfor %}
+                        <p><strong>Equipments</strong></p>
+                        <li>- {{cocktail.cocktail_equipments}} </li>
+                        <p><strong>Ingredients</strong></p>
+                        <li>- {{cocktail.cocktail_ingredients}} </li>
+                        <li>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="waves-effect waves-light btn green btn_size">DONE</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="{{url_for('edit_cocktail', cocktail_id=cocktail._id)}}" class="waves-effect waves-light btn red btn_size">EDIT</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ {% endfor %} 
+     </div>
+</div>
+ {% endblock %}
+
+
+
