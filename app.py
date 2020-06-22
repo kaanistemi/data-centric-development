@@ -34,7 +34,7 @@ def insert_cocktail():
     cocktails.insert_one(request.form.to_dict())
     return redirect(url_for('get_cocktails'))
     
-@app.route('/edit_cocktail')
+@app.route('/edit_cocktail<cocktail_id>')
 def edit_cocktail(cocktail_id):
     the_cocktail = mongo.db.cocktails.find_one({"_id": ObjectId(cocktail_id)})
     all_categories = mongo.db.categories.find()
