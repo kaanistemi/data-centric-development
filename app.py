@@ -34,7 +34,7 @@ def insert_cocktail():
     cocktails.insert_one(request.form.to_dict())
     return redirect(url_for('get_cocktails'))
     
-@app.route('/edit_cocktail/<cocktail_id>')
+@app.route('/edit_cocktail')
 def edit_cocktail(cocktail_id):
     the_cocktail = mongo.db.cocktails.find_one({"_id": ObjectId(cocktail_id)})
     all_categories = mongo.db.categories.find()
@@ -45,8 +45,8 @@ def get_categories():
     return render_template('cocktails.html', categories = mongo.db.categories.find())
 
 if __name__ == '__main__':
-    
-    app.run(host=os.getenv("IP", "0.0.0.0"),
-        port=int(os.getenv("PORT", "5000")), debug=False)
-
+    app.run(host=os.environ.get('IP'),
+            port=int(os.environ.get('PORT')),
+            debug=True)
+            
 
