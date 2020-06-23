@@ -14,7 +14,8 @@ app.config["MONGO_URI"] ='mongodb+srv://root:r00tUser@myfirstcluster-hmnju.mongo
 mongo = PyMongo(app)
 
 
-app=Flask(__name__,template_folder='template')
+app=Flask(__name__,template_folder='templates')
+@app.route("/")
 @app.route('/get_cocktails')
 def get_cocktails():
     _cocktails = mongo.db.cocktails.find()
