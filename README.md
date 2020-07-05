@@ -21,20 +21,30 @@ User Story: A bartender would like to know if he does the tequila sunrise right 
 <h2>Features</h2>
 
 <h4>Existing Features</h4>
+
 - Login page directs users main page if login is succesfull otherwise user is directed register page.
+
 - Register page created for user who hasn't singed up yet. After succesful resgistiration user is directed to main page.
+
 - There are 3 list item in nav-bar which are "Home", Add Cocktail" and Log Out. "Log out" allows exiting option from page, "Add Cocktail" provides form to user who wants to add cocktail recepies and
 "Home" directs users to main page. On the left side nav-bar "Cockail Recipe" is wtirren which directs user main page as well.
+
 - Cards display cocktails' name, photo, information, equipment, ingredient and level of alcohol. Bottom of the card there are two button that provide user edit and delete option. Edit button opens new page
 to allow user editing cocktails by filling form.
+
 - Footer part gives brief information about website, social media links and conctact details.
 
 
 <h4>Features Left to Implement</h4>
+
 - Adding star rate
+
 - Search button
+
 - Own profile page for each user
+
 - Forgot my password and remember me to login and register page.
+
 - Modal for dialog boxes
 
 <h2>Technologies Used</h2>
@@ -119,11 +129,17 @@ I've deployed my Project GitHub and Heroku.
 <h2>Credit</h2>
 
 <h4>Contents</h4>
+
 The texts for 5 cocktails copied from Wikipedia;
+
 - https://en.wikipedia.org/wiki/Tequila_sunrise_(cocktail)
+
 - https://en.wikipedia.org/wiki/Long_Island_iced_tea
+
 - https://en.wikipedia.org/wiki/Appletini
+
 - https://en.wikipedia.org/wiki/Mojito
+
 - https://en.wikipedia.org/wiki/Fizz_(cocktail)#Gin_fizz
 
 A text for Rhubarb cordial copied from;
@@ -131,15 +147,21 @@ A text for Rhubarb cordial copied from;
 
 <h4>Media</h4>
 The photos used in this site were obtained from;
+
 - Tequila Sunrise : https://www.acouplecooks.com/tequila-sunrise/
+
 - Long Island : https://blog.cocktailkit.com.au/wp-content/uploads/2017/05/long-island-iced-tea.jpg
+
 - Appletine : https://i2.wp.com/dishesdelish.com/wp-content/uploads/2020/02/Sour-Appletini-Cocktail-14.jpg
+
 - Mojito : https://www.liquor.com/thmb/qBrBRm02Y-l2BvmF_TZwTtII-EI=/735x0/__opt__aboutcom__coeus__resources__content_migration__liquor__2018__09__04153106__mojito-720x720-recipe-a55b114fc99c4a64b38c9ef6d1660e20.jpg
+
 - Gin Fizz : https://www.liquor.com/thmb/-OMhbW2k9O0kyVunw85hdQbhdU8=/735x0/__opt__aboutcom__coeus__resources__content_migration__liquor__2017__08__25101601__gin-fizz-720-720-article-d3f54dc6c2d5466e861484a10e3f6f32.jpg
+
 - Rhubarb Cardial : https://simply-delicious-food.com/wp-content/uploads/2018/11/strawberry-blush-gin-and-tonic-3.jpg
 
 <h4>Acknowledgements</h4>
 
 - I received inspiration for this project from Code Institute Data Centric Development Mini Porject and https://www.liquor.com/cocktail-and-other-recipes-4779343
 
-# data-centric-development
+
