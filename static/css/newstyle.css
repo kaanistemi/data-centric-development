@@ -1,0 +1,241 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.btn_size {
+    margin-top:30px;
+    height:30px;
+    width:110px;      
+}
+
+.cocktail-title-1 {
+    font-size:20px;
+    float:left; 
+}
+
+.cocktail-title-2 {
+    font-size:18px;
+    color:#F18409
+}
+
+.nav-text{
+    font-family: 'Kanit', sans-serif;
+    font-size:20px;
+}
+
+.white-text {
+    font-family: 'Kanit', sans-serif;
+    font-size:28px;
+}
+
+.title-type{
+    font-size:15px;
+}
+
+.title-level{
+    font-size:15px;
+  
+}
+
+.text-type{
+    font-size:14px
+}
+
+.nav-wrapper {
+    background-color:#F18409;
+}
+
+.page-footer {
+    background-color:darkgrey;
+}
+
+.card {
+    transition: .5s
+}
+
+.card:hover i , .cocktail-title{
+    color:#F18409
+}
+
+.card:hover{
+    transform: scale(1.03)
+}
+
+.log-reg {
+    color:#34BA97;
+}
+
+.left-align {
+    margin-left:0px;
+}
+
+.card-footer{
+    height:70px;
+}
+
+.list-inline{
+    list-style: none;
+    
+    
+}
+
+.social-link{
+    margin: 5px;
+    display: inline;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-pinterest {
+  background: #B92303;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-instagram {
+  background: #F78181;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.footer-text{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-title {
+    font-size:50px;
+    color:#34BA97;
+    font-family: 'Nunito', sans-serif;;
+}
+
+
+@media screen and (min-width: 1000px) {
+.main-title {
+  font-size:50px;
+}
+}
+
+@media screen and (max-width: 1001px) {
+.main-title {
+  font-size:35px;
+}
+}
+
+.flash-message {
+    font-size:26px;
+}
+
+@media screen and (min-width: 1000px) {
+.flash-message {
+  font-size:26px;
+}
+}
+
+@media screen and (max-width: 1001px) {
+.flash-message {
+  font-size:18px;
+}
+}
+
+
+.brand-logo {
+    font-family: 'Kanit', sans-serif;
+}
+
+.add-edit-title {
+    color:#34BA97;
+    font-family: 'Kanit', sans-serif;  
+}
+
+
+.img-rounded{
+    height:350px;
+    width:300%;
+    object-fit:fill;
+    
+}
+@media screen and (min-width: 1450px) {
+.img-rounded {
+  height:360px;
+}
+}
+
+
+@media screen and (max-width: 1451px) {
+.img-rounded {
+  height:260px;
+
+}
+}
+
+@media screen and (max-width: 1200px) {
+.img-rounded {
+ height:230px;
+}
+}
+
+@media screen and (max-width: 992px) {
+.img-rounded {
+  height:380px;
+
+}
+}
+@media screen and (max-width: 800px) {
+.img-rounded {
+  height:285px;
+
+}
+}
+
+
+
+@media screen and (min-width: 1200px) {
+.cocktail-title-1 {
+    font-size:20px;
+}
+}
+
+@media screen and (max-width: 1201px) {
+.cocktail-title-1 {
+    font-size:18px;
+}
+}
+
+

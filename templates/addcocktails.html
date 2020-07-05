@@ -1,13 +1,12 @@
 {% extends 'base.html' %} {% block content %}
+<div class="container">
+    <h3 class="add-edit-title">Add Cocktail</h3>
+    <div class="row">
+        <form action="{{url_for('insert_cocktail')}}" method="POST" class="col s12">
 
-<h3>Add Cocktail</h3>
-
-<div class="row">
-    <form action="{{url_for('insert_cocktail')}}" method="POST" class="col s12">
-
-        <div class="input-field col s12">
-            <i class="material-icons prefix">view_module</i>
-            <select id="category_name" name="category_name">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">view_module</i>
+                <select id="category_name" name="category_name">
                   <option value="" disabled selected>Types of cocktails</option>
                   {% for cat in categories %}
                       <option value="{{cat.category_name}}">{{cat.category_name}}</option>
@@ -15,63 +14,44 @@
                   
                   
             </select>
-            <label>Materialize Select</label>
-        </div>
+                <label>Materialize Select</label>
+            </div>
 
 
-        <div class="input-field col s12">
-            <i class="material-icons prefix">add_a_photo</i>
-            <input id="profile" name="profile" type="text" class="validate">
-            <label for="add_a_photo">Image Link</label>
-        </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">add_a_photo</i>
+                <input id="profile" name="profile" type="text" class="validate">
+                <label for="add_a_photo">Image Link (Add photo as a square) </label>
+            </div>
 
 
-        <div class="input-field col s12">
-            <i class="material-icons prefix">chevron_right</i>
-            <input id="cocktail_name" name="cocktail_name" type="text" class="validate">
-            <label for="chevron_right">Cocktail Name</label>
-        </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">chevron_right</i>
+                <input id="cocktail_name" name="cocktail_name" type="text" class="validate">
+                <label for="chevron_right">Cocktail Name</label>
+            </div>
 
-        <div class="input-field col s12">
-            <i class="material-icons prefix">info</i>
-            <input id="cocktail_info" name="cocktail_info" type="text" class="validate">
-            <label for="info">Cocktail Information</label>
-        </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">info</i>
+                <input id="cocktail_info" name="cocktail_info" type="text" maxlength="122" class="validate">
+                <label for="info">Cocktail Information</label>
+            </div>
 
-        <div class="input-field col s12">
-            <i class="material-icons prefix">menu</i>
-            <textarea name="cocktail_equipments" name="cocktail_equipments" type="text" class="materialize-textarea"></textarea>
-            <label for="menu">Equipments</label>
-        </div>
-        <div class="input-field col s12">
-            <i class="material-icons prefix">content_paste</i>
-            <textarea name="cocktail_ingredients" name="cocktail_ingredients" type="text" class="materialize-textarea"></textarea>
-            <label for="content_paste">Ingredients</label>
-        </div>
-        <div class="input-field col s12">
-            <i class="material-icons prefix">local_bar</i>
-            <textarea name="cocktail_mix" name="cocktail_mix" type="text" class="materialize-textarea"></textarea>
-            <label for="local_bar">How to Mix</label>
-        </div>
-
-
-
-
-        <center> <button type="submit" name="action" class="btn btn-secondary btn-lg">Share your Cocktail</button></center>
-
-
+            <div class="input-field col s12">
+                <i class="material-icons prefix">menu</i>
+                <textarea name="cocktail_equipments" name="cocktail_equipments" type="text" class="materialize-textarea"></textarea>
+                <label for="menu">Equipments</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">content_paste</i>
+                <textarea name="cocktail_ingredients" name="cocktail_ingredients" type="text" class="materialize-textarea"></textarea>
+                <label for="content_paste">Ingredients</label>
+            </div>
+            <center> <button type="submit" name="action" class="btn btn-secondary btn-lg">Share your Cocktail<i class="material-icons prefix">local_bar</i></button></center>
+    </div>
 </div>
 </form>
 </div>
-
-
-
-
-
-
-
-
-
 
 
 

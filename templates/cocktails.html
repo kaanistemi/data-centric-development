@@ -1,48 +1,91 @@
 {% extends 'base.html' %} {% block content %} 
-<div class="row">
-    <div class="container-fluid">
+
+<div class="container">
+    <div class="row">
+    
 {% for cocktail in cocktails%}
-        <div class="col-md-4">
+        <div class="col s6 m6 l4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="{{cocktail.profile}}">
+                    <img class="img-rounded activator resizeimg" src="{{cocktail.profile}}">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4"><strong>{{cocktail.cocktail_name}}</strong><i class="material-icons right">more_vert</i></span>
+                    <span class="card-title activator grey-text text-darken-4"><strong><p class="cocktail-title-1">{{cocktail.cocktail_name}}</p></strong><i class="material-icons right">more_vert</i></span>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted"> {{cocktail.cocktail_info}} </small>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i><strong>{{cocktail.cocktail_name}}</strong></span>
-                    <ul>
-                       {% for cat in categories %}
-                        <li>- {{cat.category_name}}  </li>
-                       {% endfor %}
-                        <p><strong>Equipments</strong></p>
-                        <li>- {{cocktail.cocktail_equipments}} </li>
-                        <p><strong>Ingredients</strong></p>
-                        <li>- {{cocktail.cocktail_ingredients}} </li>
-                        <li>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col">
-                                        <a class="waves-effect waves-light btn green btn_size">DONE</a>
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i><strong><p class="cocktail-title-2">{{cocktail.cocktail_name}}<p></strong></span>
+                        <ul>
+                          <li class="title-level">-{{cocktail.category_name}}  </li>
+                                <p class="title-type"><strong>Equipments</strong></p>
+                                <li> <p class="text-type">{{cocktail.cocktail_equipments}} </p></li>
+                                <p class="title-type"><strong>Ingredients</strong></p>
+                            <li> <p class="text-type">{{cocktail.cocktail_ingredients}}</p></li>
+                            
+                            <li>
+                                <div class="container-fluid left-align">
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="{{url_for('edit_cocktail', cocktail_id=cocktail._id)}}" class="waves-effect waves-light btn green btn_size ">EDIT</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="{{url_for('delete_cocktail', cocktail_id=cocktail._id)}}" href="#modal1" class="waves-effect waves-light btn red btn_size model trigger" data-target="model">DELETE</a>
+                                        </div>
+
+                                            
+                                        
                                     </div>
-                                    <div class="col">
-                                        <a href="{{url_for('edit_cocktail', cocktail_id=cocktail._id)}}" class="waves-effect waves-light btn red btn_size">EDIT</a>
-                                    </div>
+                              
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
                 </div>
             </div>
         </div>
  {% endfor %} 
-     </div>
+    </div>     
 </div>
+
+<footer class="page-footer center-align">
+    <div class="container">
+        <div class="row">
+            <div class="col l4 s12">
+                <h5 class="white-text">Cocktail Recipes</h5>
+                <p class="grey-text text-lighten-4 footer-text">It's a platform that you can share your cocktails and find all kinds of recepies.<br> Enjoy your cocktail! </br> </p></center>
+            </div>
+              
+            <div class="col l4 s12">
+               <h5 class="white-text">Follow Us</h5>
+                <ul class="list-inline">
+                    <li class="social-link"><a class="grey-text text-lighten-3" target="_blank" href="https://www.facebook.com/"> <i class="fa fa-facebook"></i></a></li>
+                    <li class="social-link"><a class="grey-text text-lighten-3" target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                    <li class="social-link"><a class="grey-text text-lighten-3" target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-link"><a class="grey-text text-lighten-3" target="_blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+                 <p class=footer-text>#CocktailRecipes</p>
+            </div>
+              <div class="col l4 s12">
+                <h5 class="white-text">Contact</h5>
+                    <p class=footer-text>Phone: 01 265 78 98
+                    <p class=footer-text>E-mail:kaanrecepies@gmail.com</p>
+              </div>
+            </div>
+        </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <p class="center-align">© Copyright 2020 Irfan Kaan Istemi</p>
+                </div>
+            </div>
+    </div>
+
+
+
+</footer>
+
  {% endblock %}
+
 
 
 
