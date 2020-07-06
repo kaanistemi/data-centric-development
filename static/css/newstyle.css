@@ -242,6 +242,13 @@ main {
 }
 }
 
+@media screen and (max-width: 626px) {
+.img-rounded {
+  height:440px;
+
+}
+}
+
 @media screen and (max-width: 586px) {
 .img-rounded {
   height:380px;
@@ -263,5 +270,3 @@ main {
     font-size:18px;
 }
 }
-
-
