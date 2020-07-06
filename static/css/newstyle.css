@@ -242,7 +242,7 @@ main {
 }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 600px) {
 .img-rounded {
   height:470px;
 
