@@ -180,6 +180,12 @@ main {
     margin-top:15px;
 }
 
+.brand-logo-2{
+    font-family: 'Kanit', sans-serif;
+    font-size:32px;
+
+}
+
 .add-edit-title {
     color:#34BA97;
     font-family: 'Kanit', sans-serif;  
