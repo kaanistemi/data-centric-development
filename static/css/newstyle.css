@@ -175,8 +175,25 @@ main {
 }
 
 
-.brand-logo {
+.brand-logo-2 {
     font-family: 'Kanit', sans-serif;
+    font-size:32px;
+    margin-left:3px;
+
+}
+
+@media screen and (min-width: 800px) {
+.brand-logo-2 {
+  font-size:32px;
+}
+}
+
+
+@media screen and (max-width: 801px) {
+.brand-logo-2 {
+  font-size:21px;
+
+}
 }
 
 
@@ -189,8 +206,7 @@ main {
 
 .img-rounded{
     height:350px;
-    width:300%;
-    object-fit:fill;
+    width:100%;
     
 }
 @media screen and (min-width: 1450px) {
@@ -225,6 +241,14 @@ main {
 
 }
 }
+
+@media screen and (max-width: 586px) {
+.img-rounded {
+  height:380px;
+
+}
+}
+
 
 
 

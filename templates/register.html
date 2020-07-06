@@ -1,6 +1,10 @@
 {% block content %}
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,7 +17,7 @@
     <header>
   <nav>
     <div class="nav-wrapper">
-      <strong><a href="{{url_for('register')}}" class="brand-logo">Cocktail Recipes</a></strong>
+      <strong><a href="{{url_for('get_cocktails')}}" class="brand-logo"><span class="brand-logo-2"> Cocktail Recipies</span></a></strong>
 
     </div>
   </nav>
